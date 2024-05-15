@@ -23,10 +23,19 @@
             margin: 0;
             font-size: 2.5em;
         }
-        header nav a {
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
             font-weight: bold;
         }
         .cta-button {
@@ -76,46 +85,50 @@
     <header>
         <h1>Autumnly</h1>
         <nav>
-            <a href="#features">Features</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#blog">Blog</a>
-            <a href="#contact" class="cta-button">Book Demo</a>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
         </nav>
+        <a href="#contact" class="cta-button">Book Demo</a>
     </header>
 
-    <div class="pane">
-        <h2>AI-Powered Hotel Revenue Management and Marketing</h2>
-        <p>Maximize your hotel's revenue and streamline your marketing efforts with Autumnly.</p>
-        <img src="https://via.placeholder.com/800x400" alt="Autumnly Image">
-    </div>
+    <main>
+        <div class="pane" id="home">
+            <h2>AI-Powered Hotel Revenue Management and Marketing</h2>
+            <p>Maximize your hotel's revenue and streamline your marketing efforts with Autumnly.</p>
+            <img src="https://source.unsplash.com/800x400/?hotel" alt="Autumnly Image">
+        </div>
 
-    <div class="pane testimonials">
-        <h2>As Featured In</h2>
-        <img src="https://via.placeholder.com/150x80" alt="Press Logo 1">
-        <img src="https://via.placeholder.com/150x80" alt="Press Logo 2">
-        <img src="https://via.placeholder.com/150x80" alt="Press Logo 3">
-        <img src="https://via.placeholder.com/150x80" alt="Press Logo 4">
-    </div>
+        <div class="pane testimonials">
+            <h2>As Featured In</h2>
+            <img src="https://source.unsplash.com/150x80/?logo1" alt="Press Logo 1">
+            <img src="https://source.unsplash.com/150x80/?logo2" alt="Press Logo 2">
+            <img src="https://source.unsplash.com/150x80/?logo3" alt="Press Logo 3">
+            <img src="https://source.unsplash.com/150x80/?logo4" alt="Press Logo 4">
+        </div>
 
-    <div class="pane" id="features">
-        <h2>Product Features</h2>
-        <p><strong>Automated Pricing:</strong> Dynamic pricing to maximize revenue</p>
-        <p><strong>Automated Marketing:</strong> Personalized marketing campaigns</p>
-        <p><strong>Automated OTA Management:</strong> Seamless OTA updates and management</p>
-    </div>
+        <div class="pane" id="features">
+            <h2>Product Features</h2>
+            <p><strong>Automated Pricing:</strong> Dynamic pricing to maximize revenue</p>
+            <p><strong>Automated Marketing:</strong> Personalized marketing campaigns</p>
+            <p><strong>Automated OTA Management:</strong> Seamless OTA updates and management</p>
+        </div>
 
-    <div class="pane" id="testimonials">
-        <h2>Customer Testimonials</h2>
-        <p>"Autumnly transformed our hotel's revenue management. We've seen a significant increase in profits." - Hotel Manager</p>
-        <p>"The automated marketing feature is a game-changer. Our campaigns have never been more effective." - Marketing Director</p>
-    </div>
+        <div class="pane" id="testimonials">
+            <h2>Customer Testimonials</h2>
+            <p>"Autumnly transformed our hotel's revenue management. We've seen a significant increase in profits." - Hotel Manager</p>
+            <p>"The automated marketing feature is a game-changer. Our campaigns have never been more effective." - Marketing Director</p>
+        </div>
 
-    <div class="pane" id="blog">
-        <h2>Latest Blog Posts</h2>
-        <p><a href="#">How AI is Revolutionizing Hotel Revenue Management</a></p>
-        <p><a href="#">5 Tips for Effective Hotel Marketing</a></p>
-        <p><a href="#">The Future of OTA Management</a></p>
-    </div>
+        <div class="pane" id="blog">
+            <h2>Latest Blog Posts</h2>
+            <p><a href="#">How AI is Revolutionizing Hotel Revenue Management</a></p>
+            <p><a href="#">5 Tips for Effective Hotel Marketing</a></p>
+            <p><a href="#">The Future of OTA Management</a></p>
+        </div>
+    </main>
 
     <footer id="contact">
         <p>&copy; 2024 Autumnly. All rights reserved.</p>
